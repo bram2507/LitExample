@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../header-container.js';
+    import '../header-title.js';
+
+    const header = 'Hello owc World!';
+    render(
+      html`
+       
+          <p>some light-dom</p>
+          <p>pepe</p> 
+          <header-title></header-title>
+          <header-container></header-container>
+         
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
