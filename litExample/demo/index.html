@@ -19,12 +19,11 @@
     const header = 'Hello owc World!';
     render(
       html`
-       
-          <p>some light-dom</p>
-          <p>pepe</p> 
-          <header-title></header-title>
-          <header-container></header-container>
-         
+          <header-container>
+            <p>some light-dom</p>
+            <p>pepe</p> 
+            <header-title></header-title>
+          </header-container>
       `,
       document.querySelector('#demo')
     );

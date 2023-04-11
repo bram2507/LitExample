@@ -1,17 +1,25 @@
 import { LitElement, html, css  } from "lit";
 
 export class HeaderContainer extends LitElement{
-    static styles = css`
-    :hot {
+    static get styles() {
+        return css`
+          div { color: red; }
+        `;
     }
-   `;
-   static properties = {};
+
+   static get properties() {
+      return { message: 'PEPE', text: ''};
+  }
+  
    constructor(){
     super();
+    this.message = 'Hello container';
+    this.text = 'pepe';
    }
     render(){
         return html`
-        <div>Hello container<div>
+        <div>${this.message} ${this.text}</div>
+        <slot></slot>
         `;
     };
 }

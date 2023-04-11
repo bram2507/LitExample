@@ -3,6 +3,7 @@ import { LitElement,html,css } from "lit";
 export class HeaderTitle extends LitElement{
    static styles = css`
     :hot {
+     
     }
    `;
    static properties = {};
@@ -10,6 +11,6 @@ export class HeaderTitle extends LitElement{
     super();
    }
    render(){
-        return html`<h1>Header Main Title</h1>`;
+        return html`<h2>Header Main Title</h2>`;
    }
 }
