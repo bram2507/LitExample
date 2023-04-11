@@ -1,5 +1,5 @@
 import { html } from 'lit';
-import '../header-main.js';
+import '../header-main.js.js';
 
 export default {
   title: 'HeaderMain',
